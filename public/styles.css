@@ -1,6 +1,28 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background-color: #F3EEEA;
+}
+
+body::before, 
+body::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 30%;
+    pointer-events: none;
+}
+
+body::before {
+    background: #393632;
+    filter: url(#grainy);
 }
