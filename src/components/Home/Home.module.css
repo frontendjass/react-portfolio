@@ -1,0 +1,28 @@
+.hero {
+    padding-top: 70px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    background-color: transparent;
+
+}
+@media(min-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+.hero {
+    background-image: url('./blob-haikei2.svg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 900/600;
+}
