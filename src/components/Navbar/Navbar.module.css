@@ -7,6 +7,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    background-color: #F3EEEA;
+    opacity: 95%;
 
 }
 .logo {
@@ -17,6 +19,7 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    cursor: default;
 }
 .navbar {
     min-height: 70px;
@@ -24,8 +27,10 @@
 
 @media(min-width: 1024px) {
     .navbarList {
-        display: block;
+        display: flex;
+        gap: 2rem;
     }
+
 }
 .navbarList li {
     list-style: none;
@@ -42,11 +47,15 @@
     text-decoration: none;
     color: #393632;
     display: inline-block;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease; 
 }
 .navbarList li a:hover {
     transform: scale(1.3); /* Increase the size on hover */
     transform-origin: center;
+    color: #100e0c;
+}
+.navbarList li a:active {
+    transform: scale(1.3);
 }
 
 /* Hamburger menu */

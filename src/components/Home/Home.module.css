@@ -2,6 +2,7 @@
     padding-top: 70px;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
@@ -9,9 +10,23 @@
 }
 h1 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
     background-color: transparent;
-
+    text-transform: uppercase;
+}
+.titleHover {
+    word-spacing: 0.5rem;
+    white-space: pre-wrap;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    
+}
+.titleHover:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+    transform-origin: center;
+    color: #161411;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
 }
 @media(min-width: 1024px) {
     h1 {

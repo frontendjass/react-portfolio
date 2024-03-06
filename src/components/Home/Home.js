@@ -3,8 +3,15 @@ import styles from './Home.module.css';
 
 function Home() {
     return (
-        <div className={styles.hero}>
-            <h1>Elevating Brands through Exceptional Design</h1>
+        <div id="home" className={styles.hero}>
+            <span><em>Frontend Developer & Designer</em></span>
+            <h1>
+                <span className={styles.titleHover}>Elevating </span>
+                <span className={styles.titleHover}>Brands </span>
+                <span className={styles.titleHover}>through </span>
+                <span className={styles.titleHover}>Exceptional </span>
+                <span className={styles.titleHover}>Design </span>
+            </h1>
         </div>
     )
 }
