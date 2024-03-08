@@ -1,6 +1,7 @@
 .work {
     height: 100vh;
     padding: 5rem 2rem;
+    
 }
 .bold {
     font-weight: 700;
@@ -22,31 +23,64 @@
         font-size: 3rem;
     }
     .workTitle h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 .worksList {
     margin-top: 2rem;
 }
-.worksList h4 {
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.worksList a {
-    color: #776B5D;
-    text-decoration: none;
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease; 
-    padding-left: 2rem;
-}
-.worksList a:hover {
-    color: #100e0c;
-    transform: scale(1.3);
-    transform-origin: center;
-}
+
 .customLine {
     border-top: 1px solid #000; /* Adjust thickness and color as needed */
     margin: 20px 0; /* Adjust margin for spacing */
-    min-width: 300px;
-    max-width: 600px;
+    width: 320px;
+
+}
+@media(min-width: 1024px) {
+    .customLine {
+        min-width: 600px;
+    }
+}
+
+.workContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.workList {
+    height: 490px;
+    margin-top: 1rem;
+}
+.workList, button {
+    margin-left: 2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+    font-family: "Montserrat", sans-serif;
+}
+.workList, button:hover {
+    cursor: pointer;
+    transform-origin: center;
+    transform: scale(1.3);
+}
+.pictureContainer {
+    width: 400px;
+    height: 490px;
+    margin-right: 5rem;
+    box-shadow: 3px 3px 8px;
+    margin-top: 1rem;
+}
+.pictureContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media(max-width: 1170px) {
+    .pictureContainer {
+        display: none;
+    }
+    .workContainer {
+        justify-content: center;
+    }
 }

@@ -9,9 +9,11 @@
     box-sizing: border-box;
     
 }
+
 body {
     min-width: 325px;
     background-color: #F3EEEA;
+    overflow-x: hidden;
 }
 
 body::before, 
