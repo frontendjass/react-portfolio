@@ -23,7 +23,7 @@ body::after {
     top: 0;
     content: '';
     width: 100vw;
-    height: 200%;
+    height: 300%;
     z-index: 9999;
     opacity: 30%;
     pointer-events: none;

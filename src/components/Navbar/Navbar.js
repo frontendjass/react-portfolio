@@ -15,7 +15,6 @@ function Navbar() {
         <ul className={`${styles.navbarList} ${active ? styles.active : 'active'}`}>
           <li><a href="#home">Home</a></li>
           <li><a href="#work">Work</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
         <div className={styles.hamburger} onClick={handleActive}>
